@@ -10,7 +10,7 @@ public class Ball : MonoBehaviour
     public AudioSource pop;
     public AudioSource bump;
     public float thrust;
-    float roll = 1.6f;
+    float roll = 1.55f;
     public Rigidbody rb;
     float x;
 
@@ -30,7 +30,7 @@ public class Ball : MonoBehaviour
         {
            rb.velocity = rb.velocity.normalized * roll;
         }
-        if (rb.velocity.magnitude > roll*14)
+        if (rb.velocity.magnitude > roll*8)
         {
             rb.velocity = rb.velocity.normalized * roll;
         }
@@ -59,7 +59,7 @@ public class Ball : MonoBehaviour
             pop.pitch = pop.pitch + 0.01f;
             click.pitch = 1;
             Instantiate(prefabPe, gameObject.transform.position, gameObject.transform.rotation);
-            Instantiate(myPrefab, new Vector3(0, 2.3f, 0), Quaternion.Euler(0, x, 0));
+            Instantiate(myPrefab, new Vector3(0, 2.2f, 0), Quaternion.Euler(0, x, 0));
             Destroy(gameObject, 0.1f);
         }
     }

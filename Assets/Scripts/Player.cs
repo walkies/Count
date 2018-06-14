@@ -17,11 +17,11 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Rotate(Vector2.up * Time.deltaTime * 100);
+            transform.Rotate(Vector2.up * Time.deltaTime * 85);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Rotate(Vector2.down * Time.deltaTime * 100);
+            transform.Rotate(Vector2.down * Time.deltaTime * 85);
         }
         if (Input.GetKey(KeyCode.Escape))
         {

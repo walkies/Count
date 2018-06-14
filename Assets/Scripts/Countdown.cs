@@ -32,11 +32,7 @@ public class Countdown : MonoBehaviour
         {
             spawnball();
         }
-        else if (currentScore == 60)
-        {
-            spawnball();
-        }
-        else if (currentScore == 100)
+        else if (currentScore == 80)
         {
             spawnball();
         }
@@ -44,15 +40,19 @@ public class Countdown : MonoBehaviour
         {
             spawnball();
         }
-        else if (currentScore == 150)
+        else if (currentScore == 160)
         {
             spawnball();
         }
-        else if (currentScore == 180)
+        else if (currentScore == 200)
         {
             spawnball();
         }
-        else if (currentScore == 210)
+        else if (currentScore == 240)
+        {
+            spawnball();
+        }
+        else if (currentScore == 280)
         {
             spawnball();
         }

@@ -61,10 +61,10 @@
      <Compile Include="Assets\Scripts\Volume.cs" />
      <None Include="Assets\SimpleStandardWindingOrder.shader" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>F:/Studio 1/Breakout/Count Out/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>E:/Unity/Count Out/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>F:/Studio 1/Breakout/Count Out/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>E:/Unity/Count Out/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>E:/Programs/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -239,9 +239,6 @@
  </Reference>
  <Reference Include="Unity.Locator">
  <HintPath>E:/Programs/Editor/Data/Managed/Unity.Locator.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity.Settings">
- <HintPath>F:/Studio 1/Breakout/Count Out/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Programs/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

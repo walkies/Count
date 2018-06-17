@@ -10,19 +10,26 @@ public class Blocks : MonoBehaviour {
     public Material[] randomMaterials;
     public Transform dropPoint;
     public Countdown count;
+    Vector3 explosionPos;
     float x;
     float z;
 
     void Start()
     {
+        Vector3 explosionPos = transform.position;
         rbB = GetComponent<Rigidbody>();
         rbB.AddForce(transform.forward * thrust);
         Mat = randomMaterials[Random.Range(0, randomMaterials.Length)];
         GetComponent<Renderer>().sharedMaterial = Mat;
     }
 
-	void Update () {
+	void Update ()
+    {
+        if (count.currentTime == 1)
+        {
+            rbB.AddExplosionForce(8, explosionPos, 2, 0.75f);
         }
+    }
 
     void OnCollisionEnter(Collision B)
     {

@@ -146,3 +146,8 @@ MonoBehaviour:
   thrust: 5
   rbB: {fileID: 0}
   myPrefab: {fileID: 0}
+  end: {fileID: 1093043721494324, guid: d5693282ba45afa46a8872c2ba68187c, type: 2}
+  Mat: {fileID: 0}
+  randomMaterials: []
+  dropPoint: {fileID: 0}
+  count: {fileID: 0}

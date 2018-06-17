@@ -66,7 +66,6 @@ public class Countdown : MonoBehaviour
             yield return new WaitForSeconds(1.0f);
             currentTime--;
             audio1.pitch = audio1.pitch + 0.00032f;
-
         }
         if (currentTime <= 0)
         {

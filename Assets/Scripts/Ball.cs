@@ -30,7 +30,7 @@ public class Ball : MonoBehaviour
         {
            rb.velocity = rb.velocity.normalized * roll;
         }
-        if (rb.velocity.magnitude > roll*8)
+        if (rb.velocity.magnitude > (roll*8))
         {
             rb.velocity = rb.velocity.normalized * roll;
         }
@@ -48,7 +48,7 @@ public class Ball : MonoBehaviour
         else if (c.gameObject.tag == "Block")
         {
             click.Play();
-            click.pitch = click.pitch + 0.05f;
+            click.pitch = click.pitch + 0.04f;
             Vector3 dir = c.contacts[0].point - transform.position;
             dir = -dir.normalized;
             rb.AddForce(dir * thrust * 1.2f);

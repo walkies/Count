@@ -57,6 +57,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 15c3f75b7b991b447bd7ef0a94c62b56, type: 2}
   m_StaticBatchInfo:
@@ -128,6 +129,7 @@ MonoBehaviour:
   thrust: 5
   rbB: {fileID: 0}
   myPrefab: {fileID: 1509726270682498}
+  end: {fileID: 1093043721494324, guid: d5693282ba45afa46a8872c2ba68187c, type: 2}
   Mat: {fileID: 0}
   randomMaterials:
   - {fileID: 2100000, guid: 96dbbf1fe41886548848a75bbe3f77b2, type: 2}

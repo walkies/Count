@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Viewchanger : MonoBehaviour
 {
-
+    private static bool created = false;
+    public bool inversecontrols;
     UImanager gameManager;
     void Start()
     {
@@ -16,6 +17,22 @@ public class Viewchanger : MonoBehaviour
     void Update()
     {
 
+    }
+    void Awake()
+    {
+        if (!created)
+        {
+            DontDestroyOnLoad(this.gameObject);
+            created = true;
+        }
+    }
+    public void Inversecontrols()
+    {
+        inversecontrols = true;
+        if (inversecontrols == true)
+        {
+            inversecontrols = false;
+        }
     }
     public void Play()
     {

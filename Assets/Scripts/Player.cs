@@ -5,17 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    Viewchanger view;
+    
     void Start()
     {
         Time.timeScale = 1;
-        view = FindObjectOfType<Viewchanger>();
     }
 
 
     void Update()
     {
-        if (view.inversecontrols == false)
+        if (Superscript.whatState == 1)
         {
             if (Input.GetKey(KeyCode.RightArrow))
             {
@@ -25,12 +24,8 @@ public class Player : MonoBehaviour
             {
                 transform.Rotate(Vector2.down * Time.deltaTime * 85);
             }
-            if (Input.GetKey(KeyCode.Escape))
-            {
-                SceneManager.LoadScene("Main Menu");
-            }
         }
-        else
+        else if (Superscript.whatState == 0)
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {
@@ -40,10 +35,10 @@ public class Player : MonoBehaviour
             {
                 transform.Rotate(Vector2.down * Time.deltaTime * 85);
             }
-            if (Input.GetKey(KeyCode.Escape))
-            {
-                SceneManager.LoadScene("Main Menu");
-            }
         }
-    }
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
+   }
 }

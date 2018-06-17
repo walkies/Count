@@ -7,6 +7,7 @@ public class UImanager : MonoBehaviour
 {
 
     Canvas MainMenuCanvas, ControlsMenuCanvas, OptionsMenuCanvas;
+  
 
     public enum GameState
     {
@@ -24,7 +25,6 @@ public class UImanager : MonoBehaviour
         ControlsMenuCanvas = GameObject.Find("ControlsMenu").gameObject.GetComponent<Canvas>();
         ChangeState(GameState.MainMenu);
     }
-
     void Update()
     {
 

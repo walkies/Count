@@ -5,38 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class Viewchanger : MonoBehaviour
 {
-    private static bool created = false;
-    public bool inversecontrols;
+
     UImanager gameManager;
     void Start()
     {
         gameManager = FindObjectOfType<UImanager>();
     }
 
-    // Update is called once per frame
     void Update()
     {
 
     }
-    void Awake()
-    {
-        if (!created)
-        {
-            DontDestroyOnLoad(this.gameObject);
-            created = true;
-        }
-    }
-    public void Inversecontrols()
-    {
-        inversecontrols = true;
-        if (inversecontrols == true)
-        {
-            inversecontrols = false;
-        }
-    }
     public void Play()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Game",LoadSceneMode.Single);
     }
     public void Back()
     {
@@ -55,6 +37,10 @@ public class Viewchanger : MonoBehaviour
     public void Controls()
     {
         gameManager.ChangeState(UImanager.GameState.ControlsMenu);
+    }
+    public void state()
+    {
+        Superscript.Switch();
     }
 
     public void Quit()
